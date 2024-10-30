@@ -1,0 +1,21 @@
+main {
+  background: #ffffff;
+  width: calc(100vw - 50px);
+  height: calc(100vh - 155px);
+  padding: 25px;
+  margin: 130px 0 25px 25px;
+  border-radius: 16px;
+  border: 5px solid #c8c8c8;
+  box-shadow: 10px 10px 10px #c8c8c8;
+}
+
+textarea {
+  outline: none;
+  border: none;
+  resize: none;
+  font-family: "Fredoka";
+  font-size: 28px;
+  color: #750000;
+  width: 100%;
+  height: 100%;
+}

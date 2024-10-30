@@ -1,0 +1,23 @@
+@mixin del_outs()
+{
+    margin: 0;
+    padding: 0;
+}
+@mixin set_outs($m, $p)
+{
+    margin: $m;
+    padding: $p;
+}
+@mixin size($w, $h)
+{
+    width: $w;
+    height: $h;
+}
+@mixin flex($fd:row, $fw:nowrap, $jc:center, $ai:center, $g:0)
+{
+    display: flex;
+    flex-flow: $fd $fw;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $g;
+}

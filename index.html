@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebook</title>
+    
+    <link rel="stylesheet" href="styles/general.css ">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/notebook.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <header class="board">
+        <div id="selector" id="font">
+            <button class="picker" id="font-picker">Font Style</button>
+            <div class="elements">
+                <button id="ele-but" class="Poppins" style="font-family:'Poppins';">Poppins</button>
+                <button id="ele-but" class="Fredoka" style="font-family:'Fredoka';">Fredoka</button>
+                <button id="ele-but" class="cursive" style="font-family:cursive;">Cursive</button>
+                <button id="ele-but" class="Arial" style="font-family:Arial;">Arial</button>
+                <button id="ele-but" class="monospace" style="font-family:monospace;">Monospace</button>
+                <button id="ele-but" class="Verdana" style="font-family:Verdana;">Verdana</button>
+                <button id="ele-but" class="fantasy" style="font-family:fantasy;">Fantasy</button>
+                <button id="ele-but" class="sans-serif" style="font-family:sans-serif;">Sans-serif</button>
+            </div>
+        </div>
+        <div id="selector">
+            <button class="picker" id="size-picker">Font Size</button>
+            <div class="elements">
+                <input type="range" id="ele-range" min="8" max="100" value="28">
+            </div>
+        </div>
+        <div id="selector">
+            <button class="picker" id="color-picker">Font Color</button>
+            <div class="elements">
+                <input type="color" id="ele-color" value="#000000">
+            </div>
+        </div>
+        <div id="selector">
+            <button class="picker" id="weight-picker">Font Weight</button>
+            <div class="elements">
+                <input type="range" id="ele-range" min="0" max="900" value="600">
+            </div>
+        </div>
+    </header>
+    <main>
+        <textarea type="text" id="text"></textarea>
+    </main>
+    <script src="./scripts/general.js"></script>
+</body>
+</html>

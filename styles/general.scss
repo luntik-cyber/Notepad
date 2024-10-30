@@ -1,0 +1,14 @@
+@import "./utils";
+
+*
+{
+    @include del_outs();
+
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body
+{
+    background: #f8b4a6;
+}

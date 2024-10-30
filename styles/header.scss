@@ -1,0 +1,161 @@
+@import "./utils";
+
+header
+{
+    position: fixed;
+
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include size(auto, 80px);
+
+    background: #ee4a26;
+    border-radius: 16px;
+
+    border: 5px solid #b71300;
+
+    box-shadow: 5px 5px 5px #b71300;
+    
+    @include flex(row, nowrap, start, center, 10px);
+}
+
+
+#selector
+{
+    // @include flex(column, nowrap, start, center);
+    border: solid 4px #760000;
+    outline: none;
+    border-radius: 12px;
+    
+    background: #777;
+    
+    box-shadow: 5px 5px 5px #760000;
+    
+    @include size(160px, 60px);
+}
+
+#selector:first-child
+{
+    margin-left: 5px;
+}
+#selector:last-child
+{
+    margin-right: 5px;
+}
+
+.picker
+{
+    font-family: "Fredoka";
+    font-weight: 600;
+    font-size: 22px;
+    
+    color: #fff;
+    
+    border-radius: 8px;
+    
+    border: none;
+    outline: none;
+    
+    background: #bc1300;
+    
+    cursor: pointer;
+    transition: 0.3s background ease-in-out;
+    
+    @include size(100%, 100%);
+    
+    &:hover
+    {
+        background: #760000;
+    }
+
+    &:active
+    {
+        background-color: #bc1300;
+    }
+}
+
+.elements
+{
+    border: 5px solid#760000;
+    box-shadow: 5px 5px 5px #760000;
+    
+    @include flex(column, nowrap);
+    background: #b71300;
+    padding: 5px;
+
+    opacity: 0;
+    
+    transition: 0.3s top ease-in-out;
+    
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+    transition: all 0.3s ease-in-out;
+
+    z-index: 100;
+
+    height: 0
+}
+
+#ele-but
+{
+    @include size(100%, 0);
+
+    border: none;
+    outline: none;
+
+    background: #b71300;
+
+    font-size: 0;
+    font-weight: 500;
+    color: #fff;
+
+    transition: 0.3s ease-in-out color, 0.2s ease-in-out color;
+
+    &:hover
+    {
+        cursor: pointer;
+        color: #777;
+    }
+
+    &:active
+    {
+        color: #fff;
+    }
+}
+
+#ele-range
+{
+    @include size(95%, 8px);
+    opacity: 0;
+    
+    accent-color: #5c0000;
+}
+
+#ele-color
+{
+    background: #5c0000;
+    border: none;
+    outline: none;
+
+    @include size(80%, 30px);
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    transition: background 0.3s ease-in-out;
+
+    &:hover
+    {
+        background: #777;
+    }
+}
+
+@media screen and (max-width: 746px)
+{
+    #selector
+    {
+        width: 130px;
+    }
+}
